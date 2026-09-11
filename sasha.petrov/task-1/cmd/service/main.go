@@ -8,11 +8,6 @@ func main() {
 	var a, b int
 	_, err := fmt.Scan(&a)
 	if err != nil {
-		_, err = fmt.Scan(&b)
-		if err != nil {
-			fmt.Println("Invalid second operand")
-			return
-		}
 		fmt.Println("Invalid first operand")
 		return
 	}
