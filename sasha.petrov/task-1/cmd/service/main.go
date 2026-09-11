@@ -27,23 +27,24 @@ func main() {
 		fmt.Println("Invalid operation")
 		return
 	}
+	var result int
 	switch operator {
 	case "+":
-		a += b
+		result = a + b
 	case "-":
-		a -= b
+		result = a - b
 	case "*":
-		a *= b
+		result = a * b
 	case "/":
 		if b == 0 {
 			fmt.Println("Division by zero")
 			return
 		} else {
-			a /= b
+			result = a / b
 		}
 	default:
 		fmt.Println("Invalid operation")
 		return
 	}
-	fmt.Println(a)
+	fmt.Println(result)
 }
